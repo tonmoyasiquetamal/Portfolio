@@ -1,0 +1,21 @@
+.fa-facebook{
+    color:#4FC3F7;
+}
+.fa-github{
+    color:#607D8B;
+}
+.fa-linkedin-in{
+    color: #1E88E5;
+}
+.fa-instagram{
+    color: #D81B60;
+}
+.btn-warning:hover{
+    color:#00897B;
+    box-shadow: #00897B;
+}
+.body-color{
+    color: #311B92;
+    font-weight: bolder;
+    font-size: large;
+}

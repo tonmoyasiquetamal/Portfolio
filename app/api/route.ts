@@ -1,25 +1,16 @@
 import fs from "fs";
 
-export async function GET(request: Request) {
-  fs.readFile("./data.json", "utf8", function (err, data) {
-    if (err) {
-      console.log(err);
-    }
-    {
-      const newData = { ...JSON.parse(data)};
-      fs.writeFile(
-        "test.json",
-        new Buffer(JSON.stringify(newData)),
-        function (err) {
-          if (err) {
-            console.log(err);
-          } else {
-            console.log("Hello World > test.txt");
-          }
-        }
-      );
-    }
-  });
+export async function POST(request: Request) {
+  const newData = await request.json();
+  const buffer = new Buffer(JSON.stringify(newData));
+  let error;
 
-  return new Response(JSON.stringify("kljlk"), { status: 200 });
+  // rewrite the file
+  fs.writeFile("test.json", buffer, (e) => (error = e));
+
+  if (error) {
+    return new Response("Server error", { status: 500 });
+  } else {
+    return new Response("Save", { status: 200 });
+  }
 }

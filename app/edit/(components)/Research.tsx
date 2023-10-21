@@ -57,8 +57,8 @@ export default function Research({ value, setValue }: Props) {
               className="hover:scale-110 duration-500"
               height={200}
               width={200}
-              src="/Tonmoy Asique Tamal.png"
-              alt=""
+              src={research.Image}
+              alt={research.Name}
             />
             <p className="text-lg font-semibold">{research.Name}</p>
           </div>

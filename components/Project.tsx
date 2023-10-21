@@ -18,10 +18,11 @@ export default function Project({ projects }: Props) {
             className="flex flex-col md:flex-row items-center justify-center gap-4"
           >
             <div className="w-full md:w-2/3 h-64 overflow-hidden rounded-lg border-2 border-green-500 hover:scale-105 duration-500">
-              <img
+              {/* <img
                 src="https://tonmoyasiquetamal-portfolio.netlify.app/milestone-shop.png"
                 alt=""
-              />
+              /> */}
+              <Image width={750} height={256} src={project.Image} alt={project.Name}/>
             </div>
             <div className="md:w-1/3 flex flex-col items-center justify-center md:items-end">
               <h2 className="font-bold text-2xl text-gray-700 mb-4">{project.Name}</h2>

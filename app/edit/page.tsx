@@ -7,7 +7,6 @@ import About from "./(components)/About";
 import Books from "./(components)/Books";
 import Skills from "./(components)/Skills";
 import Project from "./(components)/Project";
-import Footer from "./(components)/Footer";
 import Research from "./(components)/Research";
 
 export default function Page() {
@@ -21,7 +20,6 @@ export default function Page() {
       <Skills value={value} setValue={setValue} />
       <Project value={value} setValue={setValue} />
       <Research value={value} setValue={setValue} />
-      <Footer />
     </>
   );
 }

@@ -1,89 +1,13 @@
 {
     "Name": "Tonmoy Asique Tamal",
-    "Password":"admin",
+    "Password": "admin",
     "Image": "/Tonmoy Asique Tamal.png",
     "Profession": "Front-end Developer",
     "Bio": "A Front-End Web Developer passionate about creating interactive applications and experiences on the web.",
     "About": "I'm A Front-End Web Developer.Having The Skills And Training Made Me Confident Enough To Call Myself A Junior Front-End Web Developer/Junior Web Developer. Ready To Take On Challenges And Responsibility To Grow As A Full-Fledged Web Developer. Recently, I Have Enrolled The Complete Web Development With Jhankar Mahbub By Programming Hero. I Am Passionate About Coding And Solving Problems Through Code, And I Am Excited To Work Alongside Other Amazing Programmers And Learn So Much More!",
     "Resume": "https://drive.google.com/file/d/1wRa0P7-XhS6OrSq696f3GJhpHJBZGX1A/view",
-    "Books": [
-        {
-            "Name": "The Pragmatic Programmer",
-            "Image": "/"
-        },
-        {
-            "Name": "Clean Code",
-            "Image": "/"
-        },
-        {
-            "Name": "The Pragmatic Programmer",
-            "Image": "/"
-        },
-        {
-            "Name": "Clean Code",
-            "Image": "/"
-        }
-    ],
-    "Skills": [
-        {
-            "Name": "HTML",
-            "Image": "https://img.icons8.com/color/48/000000/html-5--v1.png"
-        },
-        {
-            "Name": "CSS",
-            "Image": "https://img.icons8.com/color/48/000000/css3.png"
-        },
-        {
-            "Name": "JavaScript",
-            "Image": "https://img.icons8.com/color/48/000000/javascript--v1.png"
-        },
-        {
-            "Name": "React",
-            "Image": "https://img.icons8.com/color/48/000000/react-native.png"
-        },
-        {
-            "Name": "Node",
-            "Image": "https://img.icons8.com/color/48/000000/nodejs.png"
-        },
-        {
-            "Name": "MongoDB",
-            "Image": "https://img.icons8.com/color/48/000000/mongodb.png"
-        },
-        {
-            "Name": "Bootstrap",
-            "Image": "https://img.icons8.com/color/48/000000/bootstrap.png"
-        },
-        {
-            "Name": "Material UI",
-            "Image": "https://img.icons8.com/color/48/000000/material-ui.png"
-        },
-        {
-            "Name": "Git",
-            "Image": "https://img.icons8.com/color/48/000000/git.png"
-        },
-        {
-            "Name": "GitHub",
-            "Image": "https://img.icons8.com/color/48/000000/github--v1.png"
-        }
-    ],
-    "Projects": [
-        {
-            "Name": "Creative Agency",
-            "Image": "https://i.ibb.co/0jZQY5q/creative-agency.png"
-        },
-        {
-            "Name": "Volunteer Network",
-            "Image": "https://i.ibb.co/0jZQY5q/creative-agency.png"
-        }
-    ],
-    "Research":[
-        {
-            "Name": "Research 1",
-            "Image": "https://i.ibb.co/0jZQY5q/creative-agency.png"
-        },
-        {
-            "Name": "Research 2",
-            "Image": "https://i.ibb.co/0jZQY5q/creative-agency.png"
-        }
-    ]
+    "Books": [],
+    "Skills": [],
+    "Projects": [],
+    "Research": []
 }

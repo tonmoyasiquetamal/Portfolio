@@ -104,8 +104,8 @@ export default function Skills({ value, setValue }: Props) {
               key={index}
               className="w-52 flex flex-col items-center justify-center mx-auto"
             >
-              {/* <Image height={64} width={64} src="/" alt="" /> */}
-              <img src={skill.Image} alt="" height={64} width={64} />
+              <Image height={64} width={64} src={skill.Image} alt={skill.Name} />
+              {/* <img src={skill.Image} alt="" height={64} width={64} /> */}
               <p className="font-bold text-lg">{skill.Name}</p>
             </div>
           );

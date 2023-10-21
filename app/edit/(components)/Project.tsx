@@ -117,10 +117,12 @@ export default function Project({ value, setValue }: Props) {
               className="flex flex-col md:flex-row items-center justify-center gap-4"
             >
               <div className="w-full md:w-2/3 h-64 overflow-hidden rounded-lg border-2 border-green-500 hover:scale-105 duration-500">
-                <img
+                <Image
                   className="mx-auto my-auto"
+                  height={256}
+                  width={780}
                   src={project.Image}
-                  alt=""
+                  alt={project.Name}
                 />
               </div>
               <div className="md:w-1/3 flex flex-col items-center justify-center md:items-end">

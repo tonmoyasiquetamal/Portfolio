@@ -19,14 +19,13 @@ export default function Books({ books }: Props) {
               className="w-80 mx-auto flex flex-col items-center justify-center gap-4"
             >
               <div className="w-48 h-72 overflow-hidden flex justify-center items-center">
-                {/* <Image
+                <Image
                   className="hover:scale-110 duration-500"
                   height={200}
                   width={200}
-                  src="/download.png"
-                  alt=""
-                /> */}
-                <img src={book.Image} height={288} width={192} alt="" />
+                  src={book.Image}
+                  alt={book.Name}
+                />
               </div>
               <p className="text-lg font-semibold">{book.Name}</p>
             </div>

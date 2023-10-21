@@ -47,15 +47,49 @@ export default function Project({ value, setValue }: Props) {
 
   function addProject(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const formData = new FormData(e.currentTarget);
-    const name = formData.get("name") as string;
-    const image = formData.get("image") as string;
-    setValue((prev) => {
-      return {
-        ...prev,
-        Projects: [{ Name: name, Image: image }, ...prev.Projects],
-      };
-    });
+    
+    const name=e.target.name.value
+    const formData = new FormData();
+    formData.append("image", e.target.image.files[0]);
+
+    fetch("/api/upload", {
+      method: "POST",
+      body: formData,
+    })
+      .then((res) => res.json())
+      .then((res) => {
+        if (res.imageUrl) {
+          fetch("/api/update", {
+            method: "POST",
+            body: JSON.stringify({
+              ...value,
+              Projects: [
+                { Name: name, Image: res.imageUrl },
+                ...value.Projects,
+              ],
+            }),
+          })
+            .then((res) => res.json())
+            .then((data) => {
+              setValue(data);
+            })
+            .then(() => {
+              alert("Successfully Updated");
+            })
+            .catch((err) => {
+              alert("Something went wrong");
+              console.log(err);
+            });
+        } else {
+          alert("Something went wrong");
+        }
+      })
+      .catch((err) => {
+        alert("Something went wrong");
+        console.log(err);
+      });
+
+    e.target.reset();
     setShow(false);
   }
 

@@ -1,5 +1,6 @@
 {
     "Name": "Tonmoy Asique Tamal",
+    "Password":"admin",
     "Image": "/Tonmoy Asique Tamal.png",
     "Profession": "Front-end Developer",
     "Bio": "A Front-End Web Developer passionate about creating interactive applications and experiences on the web.",
@@ -8,19 +9,19 @@
     "Books": [
         {
             "Name": "The Pragmatic Programmer",
-            "Image": "https://images-na.ssl-images-amazon.com/images/I/41as+WafrFL._SX258_BO1,204,203,200_.jpg"
+            "Image": "/"
         },
         {
             "Name": "Clean Code",
-            "Image": "https://images-na.ssl-images-amazon.com/images/I/41as+WafrFL._SX258_BO1,204,203,200_.jpg"
+            "Image": "/"
         },
         {
             "Name": "The Pragmatic Programmer",
-            "Image": "https://images-na.ssl-images-amazon.com/images/I/41as+WafrFL._SX258_BO1,204,203,200_.jpg"
+            "Image": "/"
         },
         {
             "Name": "Clean Code",
-            "Image": "https://images-na.ssl-images-amazon.com/images/I/41as+WafrFL._SX258_BO1,204,203,200_.jpg"
+            "Image": "/"
         }
     ],
     "Skills": [

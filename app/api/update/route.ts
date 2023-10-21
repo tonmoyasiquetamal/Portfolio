@@ -11,6 +11,6 @@ export async function POST(request: Request) {
   if (error) {
     return new Response("Server error", { status: 500 });
   } else {
-    return new Response("Save", { status: 200 });
+    return new Response(JSON.stringify(newData), { status: 200 });
   }
 }

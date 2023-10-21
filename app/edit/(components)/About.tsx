@@ -59,10 +59,29 @@ export default function About({ value, setValue }: Props) {
           }}
         ></textarea>
       </div>
-        <button
-          type="submit"
-          className="w-24 h-10 ml-auto mt-5 rounded-full border-2 border-green-300 flex items-center justify-center hover:bg-green-500 hover:text-white hover:border-green-500 transition-all duration-500"
-        >Save</button>
+      <button
+        onClick={() => {
+          fetch("/api/update", {
+            method: "POST",
+            body: JSON.stringify(value),
+          })
+            .then((res) => res.json())
+            .then((data) => {
+              setValue(data);
+            })
+            .then(() => {
+              alert("Successfully Updated");
+            })
+            .catch((err) => {
+              alert("Something went wrong");
+              console.log(err);
+            });
+        }}
+        type="submit"
+        className="w-24 h-10 ml-auto mt-5 rounded-full border-2 border-green-300 flex items-center justify-center hover:bg-green-500 hover:text-white hover:border-green-500 transition-all duration-500"
+      >
+        Save
+      </button>
     </section>
   );
 }

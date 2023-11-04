@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,9 @@ export default function Nav() {
       id="nav"
       className="flex justify-between items-center px-4 max-w-6xl mx-auto py-4 mb-14"
     >
-      <h1 className="text-3xl font-bold cursor-pointer">Tonmoy Asique Tamal</h1>
+      <Link href="/" className="text-3xl font-bold cursor-pointer">
+        Tonmoy Asique Tamal
+      </Link>
 
       {isOpen ? (
         <svg
@@ -41,9 +44,9 @@ export default function Nav() {
       )}
 
       <ul className="justify-center items-center gap-5 font-bold hidden lg:flex">
-        <li onClick={clickHandler} className="cursor-pointer">
+        <Link href="/" className="cursor-pointer">
           Home
-        </li>
+        </Link>
         <li onClick={clickHandler} className="cursor-pointer">
           About
         </li>

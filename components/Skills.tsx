@@ -10,7 +10,7 @@ export default function Skills({ skills }: Props) {
       <h1 className="text-2xl mb-14 md:m-0 md:text-3xl md:text-left md:p-5 text-center font-bold text-gray-800">
         Skills
       </h1>
-      <div className="flex flex-wrap p-8 bg-white rounded-3xl transform md:hover:scale-105 duration-500 gap-y-5">
+      <div className="flex flex-wrap p-8 bg-white rounded-3xl transform md:hover:scale-105 duration-500 gap-y-8">
         {skills.map((skill, index) => {
           return (
             <div key={index} className="w-52 flex flex-col items-center justify-center mx-auto">

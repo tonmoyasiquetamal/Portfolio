@@ -7,7 +7,61 @@
     "About": "I'm A Front-End Web Developer.Having The Skills And Training Made Me Confident Enough To Call Myself A Junior Front-End Web Developer/Junior Web Developer. Ready To Take On Challenges And Responsibility To Grow As A Full-Fledged Web Developer. Recently, I Have Enrolled The Complete Web Development With Jhankar Mahbub By Programming Hero. I Am Passionate About Coding And Solving Problems Through Code, And I Am Excited To Work Alongside Other Amazing Programmers And Learn So Much More!",
     "Resume": "https://drive.google.com/file/d/1wRa0P7-XhS6OrSq696f3GJhpHJBZGX1A/view",
     "Books": [],
-    "Skills": [],
-    "Projects": [],
+    "Skills": [
+        {
+            "Name": "JavaScript",
+            "Image": "/skill/javascript.png"
+        },
+        {
+            "Name": "React",
+            "Image": "/skill/react.png"
+        },
+        {
+            "Name": "Node.js",
+            "Image": "/skill/node-js.png"
+        },
+        {
+            "Name": "HTML5",
+            "Image": "/skill/html.png"
+        },
+        {
+            "Name": "CSS3",
+            "Image": "/skill/css.png"
+        },
+        {
+            "Name": "Bootstrap5",
+            "Image": "/skill/bootstrap.png"
+        },
+        {
+            "Name": "GitHub",
+            "Image": "/skill/github.png"
+        },
+        {
+            "Name": "Firebase",
+            "Image": "/skill/firebase.png"
+        },
+        {
+            "Name": "MongoDB",
+            "Image": "/skill/mongodb.png"
+        },
+        {
+            "Name": "Tailwind CSS",
+            "Image": "/skill/tailwind-css.png"
+        }
+    ],
+    "Projects": [
+        {
+            "Name": "Milestone-Shop",
+            "Image": "/project/milestone-shop.png"
+        },
+        {
+            "Name": "Developer-Tour",
+            "Image": "/project/developer.png"
+        },
+        {
+            "Name":"Shakti-Medi-Pharma",
+            "Image":"/project/shakti-medi-pharma.png"
+        }
+    ],
     "Research": []
 }

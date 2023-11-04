@@ -6,7 +6,7 @@ export async function POST(request: Request) {
   let error;
 
   // rewrite the file
-  fs.writeFile("test.json", buffer, (e) => (error = e));
+  fs.writeFile("data.json", buffer, (e) => (error = e));
 
   if (error) {
     return new Response("Server error", { status: 500 });

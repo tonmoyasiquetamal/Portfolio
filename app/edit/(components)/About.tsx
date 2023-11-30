@@ -1,0 +1,87 @@
+import React from "react";
+
+interface Props {
+  value: {
+    Name: string;
+    About: string;
+    Profession: string;
+    Bio: string;
+    Image: string;
+    Resume: string;
+    Books: Array<{ Name: string; Image: string }>;
+    Skills: Array<{ Name: string; Image: string }>;
+    Projects: Array<{ Name: string; Image: string }>;
+    Research: Array<{ Name: string; Image: string }>;
+  };
+  setValue: React.Dispatch<
+    React.SetStateAction<{
+      Name: string;
+      Image: string;
+      Profession: string;
+      Bio: string;
+      About: string;
+      Resume: string;
+      Books: {
+        Name: string;
+        Image: string;
+      }[];
+      Skills: {
+        Name: string;
+        Image: string;
+      }[];
+      Projects: {
+        Name: string;
+        Image: string;
+      }[];
+      Research: {
+        Name: string;
+        Image: string;
+      }[];
+    }>
+  >;
+}
+
+export default function About({ value, setValue }: Props) {
+  return (
+    <section id="about" className="px-4 max-w-6xl mx-auto py-4 my-14">
+      <h1 className="mb-14 md:m-0 text-2xl md:text-3xl md:text-left md:p-5 text-center font-bold text-gray-800">
+        About Me
+      </h1>
+      <div className="bg-white rounded-3xl transform md:hover:scale-105 duration-500">
+        <textarea
+          className="p-8 md:text-xl text-gray-500 text-justify w-full"
+          rows={7}
+          value={value.About}
+          onChange={(e) => {
+            setValue((prev) => {
+              return { ...prev, About: e.target.value };
+            });
+          }}
+        ></textarea>
+      </div>
+      <button
+        onClick={() => {
+          fetch("/api/update", {
+            method: "POST",
+            body: JSON.stringify(value),
+          })
+            .then((res) => res.json())
+            .then((data) => {
+              setValue(data);
+            })
+            .then(() => {
+              alert("Successfully Updated");
+            })
+            .catch((err) => {
+              alert("Something went wrong");
+              console.log(err);
+            });
+        }}
+        type="submit"
+        className="w-24 h-10 ml-auto mt-5 rounded-full border-2 border-green-300 flex items-center justify-center hover:bg-green-500 hover:text-white hover:border-green-500 transition-all duration-500"
+      >
+        Save
+      </button>
+    </section>
+  );
+}
